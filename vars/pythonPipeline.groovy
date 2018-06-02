@@ -16,7 +16,7 @@ pipeline
    {
     steps
      {
-       python_compile('python_proj_1')
+       python_compile('.')
      }
    }
   }
