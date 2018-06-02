@@ -9,7 +9,7 @@ pipeline
    {
    	steps
    	{
-   		checkout([$class: 'GitSCM', branches: [[name: '*/${branch}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'bg_local', url: "$gitHubProject"]]]) 
+   		checkout([$class: 'GitSCM', branches: [[name: "*/${branch}"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'bg_local', url: "$gitHubProject"]]]) 
    	}
    }
    stage('build')
